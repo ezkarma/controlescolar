@@ -73,7 +73,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 												
 												</ul>';
 								}
-								else if($user == 'alumno'){
+								else if($user == 'tutor'){
 								echo 		'<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>';
 								if ($this->Session->read('Auth.User.dias_disp')) echo	'<li class="tutorials"><a href="../../becas/calendario">Solicitar Dia</a>  </li>';
 								echo			'</ul>

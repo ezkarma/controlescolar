@@ -1,0 +1,453 @@
+2014-04-25 02:37:40 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [C:\wamp\www\ControlEscolar\app\View\Pages\home.ctp, line 51]
+2014-04-25 02:37:40 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 51, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 51, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 02:39:44 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [C:\wamp\www\ControlEscolar\app\View\Pages\home.ctp, line 33]
+2014-04-25 02:39:44 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 33, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 33, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 02:54:04 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\ControlEscolar\app\View\Users\registrar.ctp, line 6]
+2014-04-25 02:54:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/registrar
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 6, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 6, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-04-25 02:54:55 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:56:17 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:57:22 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:57:31 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:58:13 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:58:45 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 02:59:07 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 12:29:02 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-25 12:34:09 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-25 12:34:56 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-25 12:35:11 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-25 12:36:17 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-25 12:37:42 Error: [MissingControllerException] Controller class AdminsController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminsController',
+  'plugin' => NULL,
+)
+Request URL: /admins
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-25 12:38:51 Error: [MissingControllerException] Controller class TutoresController could not be found.
+Exception Attributes: array (
+  'class' => 'TutoresController',
+  'plugin' => NULL,
+)
+Request URL: /tutores
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-17 14:43:44 Error: [MissingActionException] Action UsersController::agregar_aulumno() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'agregar_aulumno',
+)
+Request URL: /users/agregar_aulumno
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-17 18:19:36 Error: [MissingControllerException] Controller class VentasController could not be found.
+Exception Attributes: array (
+  'class' => 'VentasController',
+  'plugin' => NULL,
+)
+Request URL: /ventas
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-17 18:31:54 Error: [MissingActionException] Action UsersController::registro() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'registro',
+)
+Request URL: /users/registro
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-17 18:32:45 Error: [MissingActionException] Action UsersController::perfil() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'perfil',
+)
+Request URL: /users/perfil
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-17 18:50:44 Error: [MissingControllerException] Controller class AlumnosController could not be found.
+Exception Attributes: array (
+  'class' => 'AlumnosController',
+  'plugin' => NULL,
+)
+Request URL: /alumnos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-17 18:54:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\ControlEscolar\app\Controller\AlumnosController.php, line 35]
+2014-05-17 18:54:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /alumnos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 35, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\Con...', 35, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-17 19:07:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.role' in 'where clause'
+Request URL: /alumnos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\app\Controller\AlumnosController.php(39): Model->find('all', Array)
+#7 [internal function]: AlumnosController->listado()
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-18 17:55:52 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ControlEscolar\app\Controller\UsersController.php, line 78]
+2014-05-18 17:55:52 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /users/agregar_tutor
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 78, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\Con...', 78, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-18 18:33:12 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Tutores\listado.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Tutores\\listado.ctp',
+)
+Request URL: /tutores/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-05-18 18:55:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.role' in 'where clause'
+Request URL: /tutores/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(39): Model->find('all', Array)
+#7 [internal function]: TutoresController->listado()
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-25 02:53:11 Error: [MissingActionException] Action UsersController::asignacion() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asignacion',
+)
+Request URL: /users/asignacion/2
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:15:44 Error: [MissingControllerException] Controller class GruposController could not be found.
+Exception Attributes: array (
+  'class' => 'GruposController',
+  'plugin' => NULL,
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-25 03:22:02 Error: [MissingControllerException] Controller class GruposController could not be found.
+Exception Attributes: array (
+  'class' => 'GruposController',
+  'plugin' => NULL,
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-25 03:24:02 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:28:12 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:31:54 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:32:11 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:32:15 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:33:52 Error: [MissingActionException] Action GruposController::listado() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'listado',
+)
+Request URL: /grupos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 03:49:01 Error: [MissingActionException] Action GruposController::detalle() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'detalle',
+)
+Request URL: /grupos/detalle/1
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-25 05:04:54 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\ControlEscolar\app\Controller\MateriasController.php, line 26]
+2014-05-25 05:04:54 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /materias
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\Con...', 26, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\Con...', 26, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-25 05:05:09 Error: Fatal Error (64): Cannot redeclare class Grupo in [C:\wamp\www\ControlEscolar\app\Model\Materia.php, line 5]
+2014-05-25 05:05:09 Error: [FatalErrorException] Cannot redeclare class Grupo
+Request URL: /materias
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-25 05:05:43 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Materias\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Materias\\index.ctp',
+)
+Request URL: /materias
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-05-25 16:07:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.role' in 'where clause'
+Request URL: /alumnos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\app\Controller\AlumnosController.php(39): Model->find('all', Array)
+#7 [internal function]: AlumnosController->listado()
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

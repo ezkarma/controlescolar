@@ -23,7 +23,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
 	
 	<title>
-		Secundaria Benito Bodoque
+		Secundaria Heberto Castillo Martinez
 	</title>
 	<?php
 		echo $this->Html->meta('icon');

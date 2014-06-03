@@ -63,38 +63,27 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 								if ($this->Session->read('Auth.User')){
 								
 								if($user == 'admin'){
-							echo 		'<li class="tutorials"><a href="/alumnos/listado">Alumnos</a>  </li>
-											<li class="tutorials"><a href="/tutores/listado">Tutores</a>  </li>
-											<li class="tutorials"><a href="/grupos">Grupos</a>  </li>
-											<li class="tutorials"><a href="/materias">Materias</a>  </li>
-												</ul>
-												<ul class="nav navbar-nav navbar-right">
+								echo 	'<li class="tutorials"><a href="/alumnos/listado">Alumnos</a>  </li>
+												<li class="tutorials"><a href="/tutores/listado">Tutores</a>  </li>
+												<li class="tutorials"><a href="/grupos">Grupos</a>  </li>
+												<li class="tutorials"><a href="/materias">Materias</a>  </li>
+											</ul>
+											<ul class="nav navbar-nav navbar-right">
 												<li><a href="/users/logout">Salir</a></li>
-												
-												</ul>';
+											</ul>';
 								}
-								else if($user == 'tutor'){
-								echo 		'<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>';
-								if ($this->Session->read('Auth.User.dias_disp')) echo	'<li class="tutorials"><a href="../../becas/calendario">Solicitar Dia</a>  </li>';
-								echo			'</ul>
-												<ul class="nav navbar-nav navbar-right">
-												<li><a href="/users/logout">Salir</a></li>
-												</ul>';
-
-								}
-								else if($user == 'encargado'){
-								echo 		'<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>';
-								echo 		'<li class="tutorials"><a href="/encargados/estadisticas">Estadisticas</a>  </li>';
-								echo			'</ul>
-												<ul class="nav navbar-nav navbar-right">
-												<li><a href="/users/logout">Salir</a></li>
-												</ul>';
-
-								}
+									else if($user == 'tutor'){
+									echo 		'	<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>
+													</ul>
+													<ul class="nav navbar-nav navbar-right">
+														<li><a href="/users/logout">Salir</a></li>
+													</ul>';
+									}
+								
 								}
 								else{
 								echo '</ul>
-									<ul class="nav navbar-nav navbar-right">
+										<ul class="nav navbar-nav navbar-right">
 											<li><a href="/users/login"><font color="white">Iniciar Sesion</font></a></li>
 										</ul>';
 								}

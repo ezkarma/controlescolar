@@ -33,6 +33,8 @@ echo $this->Form->submit('Buscar',array('class' => 'btn btn-success'));
 <div class="col-lg-2">
 <?php
 echo '<br><center>'.$this->Html->link("Agregar Tutor", array('controller' =>'users','action'=> 'agregar_tutor'),array('class'=>'btn btn-primary btn-lg')).'</center>';
+echo '<br><center>'.$this->Html->link("Tutores Registrados", array('controller' =>'tutores','action'=> 'passwords'),array('class'=>'btn btn-warning btn-lg')).'</center>';
+echo '<br>';
 ?>
 </div>
 	

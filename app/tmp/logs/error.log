@@ -451,3 +451,282 @@ Stack Trace:
 #10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
 #11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2014-05-30 04:07:39 Error: Fatal Error (64): Cannot redeclare class Grupo in [C:\wamp\www\ControlEscolar\app\Model\Alumno.php, line 5]
+2014-05-30 04:07:39 Error: [FatalErrorException] Cannot redeclare class Grupo
+Request URL: /alumnos/listado
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\Con...', 5, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 04:28:15 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\ControlEscolar\app\Controller\UsersController.php, line 61]
+2014-05-30 04:28:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/agregar_alumno
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 61, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 61, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 04:28:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order' in 'where clause'
+Request URL: /users/agregar_alumno
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Grupo`....', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Grupo`....', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Grupo`....', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(Grupo), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ControlEscolar\app\Controller\UsersController.php(61): Model->find('list', Array)
+#7 [internal function]: UsersController->agregar_alumno()
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 04:28:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order' in 'where clause'
+Request URL: /users/agregar_alumno
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Grupo`....', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Grupo`....', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Grupo`....', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(Grupo), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ControlEscolar\app\Controller\UsersController.php(61): Model->find('list', Array)
+#7 [internal function]: UsersController->agregar_alumno()
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 04:31:11 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\ControlEscolar\app\View\Users\agregar_alumno.ctp, line 14]
+2014-05-30 04:31:11 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/agregar_alumno
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 14, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 14, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-01 11:51:51 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\wamp\www\ControlEscolar\app\View\Grupos\agregar.ctp, line 8]
+2014-06-01 11:51:51 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /grupos/agregar
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 8, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 8, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-03 03:48:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'pedro' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `co...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `co...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1832): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(50): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 03:53:05 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Tutores\generar_usuarios.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Tutores\\generar_usuarios.ctp',
+)
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-03 03:59:30 Error: [MissingViewException] View file "C:\wamp\www\ControlEscolar\app\View\Tutores\generar_usuarios.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ControlEscolar\\app\\View\\Tutores\\generar_usuarios.ctp',
+)
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-06-03 04:06:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `co...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `co...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1832): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(66): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 04:09:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `co...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `co...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1832): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(66): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 04:49:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `co...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `co...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1832): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(68): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 04:51:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `co...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `co...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1832): DboSource->create(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(68): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 04:53:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Tutor.rol' in 'where clause'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Tutor`....', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Tutor`....', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Tutor`....', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(Tutor), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2710): Model->find('all', Array)
+#7 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(47): Model->deleteAll(Array)
+#8 [internal function]: TutoresController->generar_usuarios()
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-06-03 04:54:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2710): Model->find('all', Array)
+#7 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(47): Model->deleteAll(Array)
+#8 [internal function]: TutoresController->generar_usuarios()
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-06-03 14:28:59 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [C:\wamp\www\ControlEscolar\app\View\Layouts\default.ctp, line 66]
+2014-06-03 14:28:59 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /admins
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 66, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 66, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-03 14:50:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `control...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\Database\Mysql.php(400): DboSource->execute('UPDATE `control...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1821): Mysql->update(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(61): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 14:50:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'rayp03@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `control...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\Database\Mysql.php(400): DboSource->execute('UPDATE `control...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1821): Mysql->update(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(61): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 14:51:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ale@hotmail.com' for key 'PRIMARY'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('UPDATE `control...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\Database\Mysql.php(400): DboSource->execute('UPDATE `control...')
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(1821): Mysql->update(Object(User), Array, Array)
+#4 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(61): Model->save(Array)
+#5 [internal function]: TutoresController->generar_usuarios()
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#7 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-06-03 14:52:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'conditions' in 'where clause'
+Request URL: /tutores/generar_usuarios
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2903): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2875): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ControlEscolar\lib\Cake\Model\Model.php(2710): Model->find('all', Array)
+#7 C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php(33): Model->deleteAll(Array)
+#8 [internal function]: TutoresController->generar_usuarios()
+#9 C:\wamp\www\ControlEscolar\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TutoresController), Array)
+#10 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TutoresController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\ControlEscolar\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-06-03 15:11:16 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\ControlEscolar\app\Controller\TutoresController.php, line 32]
+2014-06-03 15:11:16 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /tutores/passwords
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 32, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 32, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

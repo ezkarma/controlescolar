@@ -6,21 +6,7 @@ var $uses = array('Tutor','User','Beca','Carrera');
 
     public function index() {
 		
-		if ($this->Session->read('Auth.User.role') === 'alumno'){
-		$usuario = $this->Auth->user();
-				
-			if($usuario['contrasena']==0){
-				$this->redirect(array('controller' => 'users','action'=>'password'));
-				}
-			else {
-			
-				$usuario = $this->Auth->user();
-				$this->set('usuario_registrado', $this->Auth->user());
-				$this->set('becas', $this->Beca->find('all', array('conditions' => array('Beca.user_id =' => $usuario['id']))));
-				}
-		}
 		
-		else $this->redirect(array('action' => 'logout'));
 	}
 	
     
@@ -40,6 +26,45 @@ var $uses = array('Tutor','User','Beca','Carrera');
 		}
 	}
 	else $this->redirect(array('action' => 'index'));
+	}
+	
+	public function passwords(){
+		$tutores = $this->User->find('all',array('conditions'=>array('User.rol'=>'tutor')));
+		$this->set('tutores',$tutores);
+	}
+	
+	public function generar_usuarios(){
+	
+		$this->User->deleteAll(array('User.rol' => 'tutor'));
+		
+		$tutores = $this->Tutor->find('all');
+		
+		$passwords = array();
+		$con = 0;
+		
+		foreach($tutores as $tutor){
+					
+		echo $con;
+		
+			$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+			$randomString = '';
+			for ($i = 0; $i < 6; $i++) {
+				$randomString .= $characters[rand(0, strlen($characters) - 1)];
+			}
+			
+			$con++;
+			
+			$this->request->data['User']['id'] = $con +2;
+			$this->request->data['User']['username'] = $tutor['Tutor']['correo'];
+			$this->request->data['User']['password'] = $randomString;
+			$this->request->data['User']['primer_password'] = $randomString;
+			$this->request->data['User']['rol'] = 'tutor';
+			
+            $this->User->save($this->request->data); 
+		}
+		
+		$this->redirect(array('controller'=>'tutores','action' => 'passwords'));
+		
 	}
 }
 

@@ -10,6 +10,7 @@ var $uses = array('Grupo','Alumno','Tutor');
 	
         if ($this->request->is('post')) {
             $this->Grupo->create();
+			$this->request->data['Grupo']['nombre'] = $this->request->data['Grupo']['grado'].$this->request->data['Grupo']['grupo'];
             if ($this->Grupo->save($this->request->data)) {
                 $this->Session->setFlash(__('El Grupo ha sido guardado'));
                 return $this->redirect(array('controller' =>'grupos','action' => 'index'));

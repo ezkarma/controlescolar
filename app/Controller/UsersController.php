@@ -2,7 +2,7 @@
 
 class UsersController extends AppController {
 
-var $uses = array('User','Alumno','Tutor');
+var $uses = array('User','Alumno','Tutor','Grupos');
 
     public function beforeFilter() {
         parent::beforeFilter();
@@ -44,7 +44,7 @@ var $uses = array('User','Alumno','Tutor');
 		
 		$usuario= $this->Auth->user();
 		
-		if ($usuario['rol']=='tutor') {
+		if ($usuario['rol']==='tutor') {
 			return $this->redirect(array('controller' => 'tutores', 'action' => 'index'));
 		}
 		
@@ -57,7 +57,9 @@ var $uses = array('User','Alumno','Tutor');
 	public function agregar_alumno() {
 		
 		if ($this->Session->read('Auth.User.rol') === 'admin'){
-	
+		
+		$this->set('grupos', $this->Alumno->Grupo->find('list',array('order'=>array('nombre'=>'asc'))));
+		
         if ($this->request->is('post')) {
             $this->Alumno->create();
             if ($this->Alumno->save($this->request->data)) {

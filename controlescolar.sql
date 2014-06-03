@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 03-06-2014 a las 15:15:49
+-- Tiempo de generación: 03-06-2014 a las 15:50:45
 -- Versión del servidor: 5.6.12-log
 -- Versión de PHP: 5.4.12
 
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `rol`, `primer_password`) VALUES
-(1, 'admin', '2112f065afc55362789fe42f6a8f470c99a6f389', 'test', 'Rx9hPN'),
+(1, 'admin', 'bc52acb4aea384ee6f4ba017211cd8f5d7969d39', 'admin', 'Rx9hPN'),
 (5, 'ale@hotmail.com', 'd1e781001a3e717b67cb603a7883b654beffc98a', 'tutor', 'Hou9U8'),
 (7, 'anahi@hotmail.com', 'b7e53da478ba158d1131133aa47a43fa8334cff0', 'tutor', 'K6q7yM'),
 (4, 'juan@hotmail.com', 'db9c7577a52d4bd600d38b6023093c5e534606c1', 'tutor', 'QyF28C'),

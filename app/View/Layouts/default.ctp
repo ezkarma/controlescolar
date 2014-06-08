@@ -1,6 +1,7 @@
 <?php
 /**
  *
+ * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -16,30 +17,150 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 ?>
 <!DOCTYPE html>
 <html>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+<style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
+
 <head>
-	
+
+	<?php echo $this->Html->charset(); ?>
 	<title>
-		Secundaria Heberto Castillo Martinez
+		<?php echo $cakeDescription ?>:
+		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+
 		echo $this->Html->css('cake.generic');
+		
 		echo $this->Html->css('bootstrap');
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-	?>
 
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-				
-	<nav class="navbar-inverse" role="navigation">
+			
+	?>
+	
+	<style type="text/css">
+		.navbar-default {
+		background-color: #176228;
+		border-color: #498c40;
+		}
+		.navbar-default .navbar-brand {
+			color: #ecf0f1;
+		}
+		.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+			color: #e0ffdb;
+		}
+		.navbar-default .navbar-text {
+			color: #ecf0f1;
+		}
+		.navbar-default .navbar-nav > li > a {
+			color: #ecf0f1;
+		}
+		.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+			color: #e0ffdb;
+		}
+		.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+			color: #e0ffdb;
+			background-color: #498c40;
+		}
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+			color: #e0ffdb;
+			background-color: #498c40;
+		}
+		.navbar-default .navbar-toggle {
+			border-color: #498c40;
+		}
+		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+			background-color: #498c40;
+		}
+		.navbar-default .navbar-toggle .icon-bar {
+			background-color: #ecf0f1;
+		}
+		.navbar-default .navbar-collapse,
+		.navbar-default .navbar-form {
+			border-color: #ecf0f1;
+		}
+		.navbar-default .navbar-link {
+			color: #ecf0f1;
+		}
+		.navbar-default .navbar-link:hover {
+			color: #e0ffdb;
+		}
+
+		@media (max-width: 767px) {
+			.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+				color: #ecf0f1;
+			}
+			.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+				color: #e0ffdb;
+			}
+			.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+				color: #e0ffdb;
+				background-color: #498c40;
+			}
+		}
+	</style>
+	
+	<nav class="navbar-default" role="navigation">
 				  <div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -49,7 +170,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href="/">Secundaria </a>
+					  <a class="navbar-brand" href="/">Secundaria Heberto Castillo Martinez</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,6 +195,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 								}
 									else if($user == 'tutor'){
 									echo 		'	<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>
+														<li class="tutorials"><a href="/alumnos/seleccion">Elegir Alumnos</a>  </li>
 													</ul>
 													<ul class="nav navbar-nav navbar-right">
 														<li><a href="/users/logout">Salir</a></li>
@@ -91,23 +213,30 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 						</div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
 				</nav>
+			
 		</div>
-		</div>
+	</head>
+	
+	<body>
+	 <div id="wrap" height="100%">
+	<div id="container">
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+			</div>
+			
 		</div>
+		
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+		<br>
+			<center><small><strong>Secundaria Heberto Castillo 2014</strong></small></center>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
+     
+
+

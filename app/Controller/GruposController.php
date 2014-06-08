@@ -2,7 +2,7 @@
 
 class GruposController extends AppController {
 
-var $uses = array('Grupo','Alumno','Tutor');
+var $uses = array('Grupo','Alumno','Tutor','Materia');
 
     public function agregar() {
 		
@@ -34,6 +34,24 @@ var $uses = array('Grupo','Alumno','Tutor');
 		}
 		else $this->redirect(array('action' => 'index'));
 	}
+	
+	public function alumnos($id){
+		$grupo = $this->Grupo->find('first', array('conditions'=>array('id'=>$id)));
+		$this->set('grupo',$grupo);
+		
+		$alumnos = $this->Alumno->find('all',array('conditions'=>array('grupo_id'=>$id)));
+		$this->set('alumnos',$alumnos);
+	}
+	
+	public function materias($id){
+		$grupo = $this->Grupo->find('first', array('conditions'=>array('id'=>$id)));
+		$this->set('grupo',$grupo);
+		
+		$materias = $this->Materia->find('all', array('conditions'=>array('grado'=>$grupo['Grupo']['grado'])));
+		$this->set('materias',$materias);
+	}
+	
+	
 		
 }
 ?>

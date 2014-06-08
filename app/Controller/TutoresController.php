@@ -2,12 +2,16 @@
 
 class TutoresController extends AppController {
 
-var $uses = array('Tutor','User','Beca','Carrera');
+var $uses = array('Tutor','User','Beca','Carrera','Alumno');
 
     public function index() {
 		$usuario_registrado = $this->Auth->user();
 		$tutor = $this->Tutor->find('first',array('conditions'=>array('correo'=>$usuario_registrado['username'])));
 		$this->set('tutor',$tutor);
+		
+		$usuarios = $this->Alumno->find('all',array('conditions'=>array('tutor_id'=>$usuario_registrado['username'])));
+		$this->set('usuarios',$usuarios);
+		
 	}
 	
     

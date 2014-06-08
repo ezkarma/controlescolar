@@ -45,7 +45,7 @@ echo '<br><center>'.$this->Html->link("Registrar Grupo", array('controller' =>'g
 		echo '<tr>';
 		echo '<td>'.$grupo['Grupo']['grado'].'</td>';
 		echo '<td>'.$grupo['Grupo']['grupo'].'</td>';
-		echo '<td>'.$this->Html->link("+", array('controller' =>'grupos','action'=> 'detalle/'.$grupo['Grupo']['id']),array('class'=>'btn btn-warning btn-sm')).'</center></td>';
+		echo '<td>'.$this->Html->link("+", array('controller' =>'grupos','action'=> 'alumnos/'.$grupo['Grupo']['id']),array('class'=>'btn btn-warning btn-sm')).'</center></td>';
 		echo '</tr>';
 	}
 	?>

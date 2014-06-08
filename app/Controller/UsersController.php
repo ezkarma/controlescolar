@@ -64,7 +64,7 @@ var $uses = array('User','Alumno','Tutor','Grupos');
             $this->Alumno->create();
             if ($this->Alumno->save($this->request->data)) {
                 $this->Session->setFlash(__('El alumno ha sido guardado'));
-                return $this->redirect(array('controller' =>'admins','action' => 'index'));
+                return $this->redirect(array('controller' =>'alumnos','action' => 'listado'));
             }
             $this->Session->setFlash(__('El alumno no pudo ser guardado. Por favor intente nuevamente'));
         }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 03-06-2014 a las 15:50:45
+-- Tiempo de generación: 08-06-2014 a las 16:59:22
 -- Versión del servidor: 5.6.12-log
 -- Versión de PHP: 5.4.12
 
@@ -29,7 +29,7 @@ USE `controlescolar`;
 --
 
 CREATE TABLE IF NOT EXISTS `alumnos` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `curp` varchar(45) NOT NULL,
   `nombre` varchar(45) DEFAULT NULL,
   `apellidopat` varchar(45) DEFAULT NULL,
@@ -38,17 +38,19 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   `grado` varchar(45) DEFAULT NULL,
   `promediogeneral` varchar(45) DEFAULT NULL,
   `grupo_id` int(11) NOT NULL,
+  `tutor_id` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumnos` (`id`, `curp`, `nombre`, `apellidopat`, `apellidomat`, `sexo`, `grado`, `promediogeneral`, `grupo_id`) VALUES
-(0, '1', '1', '1', '1', '1', '1', '1', 0),
-(1, '123', 'Gracibel', 'Campos', 'Ramos', 'femenino', '3', '9.5', 0),
-(2, 'PECR901203', 'Raymundo', 'Perez', 'Carmona', 'H', '3', '8.9', 0);
+INSERT INTO `alumnos` (`id`, `curp`, `nombre`, `apellidopat`, `apellidomat`, `sexo`, `grado`, `promediogeneral`, `grupo_id`, `tutor_id`) VALUES
+(1, '123', 'Gracibel', 'Campos', 'Ramos', 'femenino', '3', '9.5', 0, 'anahi@hotmail.com'),
+(2, 'PECR901203', 'Raymundo', 'Perez', 'Carmona', 'H', '3', '8.9', 0, 'anahi@hotmail.com'),
+(3, 'JUAM1203', 'Juanito', 'Lopez', 'Sanchez', 'Masculino', NULL, NULL, 6, ''),
+(4, 'MAR456', 'Maria', 'Alcaraz', 'Santiago', 'Femenino', NULL, NULL, 6, '');
 
 -- --------------------------------------------------------
 
@@ -82,13 +84,7 @@ CREATE TABLE IF NOT EXISTS `grupos` (
 INSERT INTO `grupos` (`id`, `grado`, `grupo`, `nombre`) VALUES
 (1, '3', 'A', '3A'),
 (2, '2', 'B', '2B'),
-(3, '1', 'c', 'no ha'),
-(4, '5', 'v', '5'),
-(5, '7', 'g', '7g'),
-(6, '1', 'C', '1C'),
-(7, '2', 'B', '2B'),
-(8, '3', 'n', '3n'),
-(9, '2', 'E', '2E');
+(6, '1', 'C', '1C');
 
 -- --------------------------------------------------------
 
@@ -116,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `materias` (
   `grado` int(11) NOT NULL,
   `profesor` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Volcado de datos para la tabla `materias`
@@ -124,7 +120,8 @@ CREATE TABLE IF NOT EXISTS `materias` (
 
 INSERT INTO `materias` (`id`, `nombre`, `grado`, `profesor`) VALUES
 (1, 'Matematicas', 3, 'Prof. Morales'),
-(2, 'Ciencias Naturales', 2, 'Sr. Lopez');
+(2, 'Ciencias Naturales', 2, 'Sr. Lopez'),
+(3, 'Historia', 1, 'Sr. Sanchez');
 
 -- --------------------------------------------------------
 
@@ -190,11 +187,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `rol`, `primer_password`) VALUES
 (1, 'admin', 'bc52acb4aea384ee6f4ba017211cd8f5d7969d39', 'admin', 'Rx9hPN'),
-(5, 'ale@hotmail.com', 'd1e781001a3e717b67cb603a7883b654beffc98a', 'tutor', 'Hou9U8'),
-(7, 'anahi@hotmail.com', 'b7e53da478ba158d1131133aa47a43fa8334cff0', 'tutor', 'K6q7yM'),
-(4, 'juan@hotmail.com', 'db9c7577a52d4bd600d38b6023093c5e534606c1', 'tutor', 'QyF28C'),
-(6, 'pedrito@hotmail.com', '835168a41725a8441e372a788616c8a743c550e1', 'tutor', 'vQEIiV'),
-(3, 'rayp03@hotmail.com', 'e0bc652583b840940c79f523e71e6ce9c3f5030c', 'tutor', 'g3wIY4');
+(5, 'ale@hotmail.com', 'f52bbaf2ad1e54fe7555ad2143831533b07451ea', 'tutor', 'ux6miM'),
+(7, 'anahi@hotmail.com', '88eca5776b9659bb16d0bbb65189dd28420138e5', 'tutor', 'I26dwu'),
+(4, 'juan@hotmail.com', '2cbcd48c8454d311426d46aab54f8c9426ce3066', 'tutor', 'kzkKPz'),
+(6, 'pedrito@hotmail.com', '70f99b095b8fb5ca9b850e2f7d87c4e7d8af023c', 'tutor', 'gbAsUI'),
+(3, 'rayp03@hotmail.com', '7f66d48faba590edc59db7ece77af0e3e2e8d680', 'tutor', '5e2EuY');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

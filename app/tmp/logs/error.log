@@ -3959,3 +3959,431 @@ Stack Trace:
 #1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-06-08 17:03:58 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-08 17:03:58 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-08 21:12:47 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-08 21:12:47 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-08 21:12:59 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-08 21:12:59 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 19:59:58 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 19:59:58 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:00:47 Error: [MissingActionException] Action MateriasController::detalle() could not be found.
+Exception Attributes: array (
+  'controller' => 'MateriasController',
+  'action' => 'detalle',
+)
+Request URL: /materias/detalle/3
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:00:48 Error: [MissingActionException] Action MateriasController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'MateriasController',
+  'action' => 'js',
+)
+Request URL: /materias/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:00:48 Error: [MissingActionException] Action MateriasController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'MateriasController',
+  'action' => 'js',
+)
+Request URL: /materias/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MateriasController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:10 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:10 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:12 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:12 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:37 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:38 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:41 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:01:41 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:03:01 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:03:01 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:04:25 Error: [MissingActionException] Action UsersController::asignacion() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asignacion',
+)
+Request URL: /users/asignacion/PEDRT1203
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:04:25 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /users/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:04:26 Error: [MissingActionException] Action UsersController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+)
+Request URL: /users/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:04:39 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:04:39 Error: [MissingActionException] Action GruposController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'GruposController',
+  'action' => 'js',
+)
+Request URL: /grupos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(GruposController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:12:37 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:12:37 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:12:48 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:12:48 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:03 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:03 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:29 Error: [MissingActionException] Action UsersController::perfil() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'perfil',
+)
+Request URL: /users/perfil
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:44 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:44 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:54 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:13:54 Error: [MissingActionException] Action AlumnosController::js() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'js',
+)
+Request URL: /alumnos/js/bootstrap.js
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:14:28 Error: [MissingActionException] Action UsersController::perfil() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'perfil',
+)
+Request URL: /users/perfil
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ControlEscolar\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ControlEscolar\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-11 20:17:44 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\wamp\www\ControlEscolar\app\Controller\GruposController.php, line 34]
+2014-06-11 20:17:44 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /grupos
+Stack Trace:
+#0 C:\wamp\www\ControlEscolar\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\Con...', 34, Array)
+#2 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\Con...', 34, Array)
+#3 C:\wamp\www\ControlEscolar\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -24,7 +24,7 @@ var $uses = array('Grupo','Alumno','Tutor','Materia');
 	public function index() {
 		if ($this->Session->read('Auth.User.rol') === 'admin'){
 			
-			$this->set('grupos', $this->Grupo->find('all'));
+			$this->set('grupos', $this->Grupo->find('all',array('order'=>'grado ASC')));
 			/*
 			if ($this->request->is('post')) {
 				$matricula = $this->data['UserBusqueda']['username'];

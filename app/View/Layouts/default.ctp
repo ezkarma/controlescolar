@@ -170,7 +170,7 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href="/">Secundaria Heberto Castillo Martinez</a>
+					  <a class="navbar-brand" href="/users">Secundaria Heberto Castillo Martinez</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -188,14 +188,15 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 												<li class="tutorials"><a href="/tutores/listado">Tutores</a>  </li>
 												<li class="tutorials"><a href="/grupos">Grupos</a>  </li>
 												<li class="tutorials"><a href="/materias">Materias</a>  </li>
+												<li class="tutorials"><a href="/mensajes">Mensajes</a>  </li>
 											</ul>
 											<ul class="nav navbar-nav navbar-right">
 												<li><a href="/users/logout">Salir</a></li>
 											</ul>';
 								}
 									else if($user == 'tutor'){
-									echo 		'	<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>
-														<li class="tutorials"><a href="/alumnos/seleccion">Elegir Alumnos</a>  </li>
+									echo 		'	<li class="tutorials"><a href="/alumnos/seleccion">Vincular Alumno</a>  </li>
+														<li class="tutorials"><a href="/mensajes">Mensajes</a>  </li>
 													</ul>
 													<ul class="nav navbar-nav navbar-right">
 														<li><a href="/users/logout">Salir</a></li>

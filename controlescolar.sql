@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 08-06-2014 a las 16:59:22
+-- Tiempo de generación: 26-06-2014 a las 00:25:49
 -- Versión del servidor: 5.6.12-log
 -- Versión de PHP: 5.4.12
 
@@ -47,21 +47,38 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
 --
 
 INSERT INTO `alumnos` (`id`, `curp`, `nombre`, `apellidopat`, `apellidomat`, `sexo`, `grado`, `promediogeneral`, `grupo_id`, `tutor_id`) VALUES
-(1, '123', 'Gracibel', 'Campos', 'Ramos', 'femenino', '3', '9.5', 0, 'anahi@hotmail.com'),
-(2, 'PECR901203', 'Raymundo', 'Perez', 'Carmona', 'H', '3', '8.9', 0, 'anahi@hotmail.com'),
-(3, 'JUAM1203', 'Juanito', 'Lopez', 'Sanchez', 'Masculino', NULL, NULL, 6, ''),
-(4, 'MAR456', 'Maria', 'Alcaraz', 'Santiago', 'Femenino', NULL, NULL, 6, '');
+(1, '123', 'Gracibel', 'Campos', 'Ramos', 'femenino', '3', '9.5', 1, 'anahi@hotmail.com'),
+(2, 'PECR901203', 'Raymundo', 'Perez', 'Carmona', 'H', '3', '8.9', 1, 'anahi@hotmail.com'),
+(3, 'JUAM1203', 'Juanito', 'Lopez', 'Sanchez', 'Masculino', '1', NULL, 6, ''),
+(4, 'MAR456', 'Maria', 'Alcaraz', 'Santiago', 'Femenino', '1', NULL, 6, '');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `calificaciones`
+-- Estructura de tabla para la tabla `calificacions`
 --
 
-CREATE TABLE IF NOT EXISTS `calificaciones` (
-  `Bimestre` varchar(45) DEFAULT NULL,
-  `Calificacion` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `calificacions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bimestre` varchar(45) DEFAULT NULL,
+  `calificacion` int(11) DEFAULT NULL,
+  `alumno_id` int(11) NOT NULL,
+  `materia_id` int(11) NOT NULL,
+  `grado` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=84 ;
+
+--
+-- Volcado de datos para la tabla `calificacions`
+--
+
+INSERT INTO `calificacions` (`id`, `bimestre`, `calificacion`, `alumno_id`, `materia_id`, `grado`) VALUES
+(78, '1', 9, 1, 7, 3),
+(79, '1', 9, 1, 8, 3),
+(80, '1', 9, 1, 9, 3),
+(81, '2', 6, 1, 7, 3),
+(82, '2', 7, 1, 8, 3),
+(83, '2', 8, 1, 9, 3);
 
 -- --------------------------------------------------------
 
@@ -75,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `grupos` (
   `grupo` varchar(45) DEFAULT NULL,
   `nombre` varchar(5) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Volcado de datos para la tabla `grupos`
@@ -84,7 +101,12 @@ CREATE TABLE IF NOT EXISTS `grupos` (
 INSERT INTO `grupos` (`id`, `grado`, `grupo`, `nombre`) VALUES
 (1, '3', 'A', '3A'),
 (2, '2', 'B', '2B'),
-(6, '1', 'C', '1C');
+(6, '1', 'C', '1C'),
+(7, '2', 'D', '2D'),
+(8, '1', 'A', '1A'),
+(9, '1', 'B', '1B'),
+(10, '1', 'D', '1D'),
+(11, '1', 'E', '1E');
 
 -- --------------------------------------------------------
 
@@ -112,16 +134,16 @@ CREATE TABLE IF NOT EXISTS `materias` (
   `grado` int(11) NOT NULL,
   `profesor` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `materias`
 --
 
 INSERT INTO `materias` (`id`, `nombre`, `grado`, `profesor`) VALUES
-(1, 'Matematicas', 3, 'Prof. Morales'),
-(2, 'Ciencias Naturales', 2, 'Sr. Lopez'),
-(3, 'Historia', 1, 'Sr. Sanchez');
+(7, 'Artes III', 3, 'Fernando Javier NÃ¡jera GÃ³mez'),
+(8, 'Ingles III', 3, 'Betzabeth RodrÃ­guez Santiago'),
+(9, 'Historia II', 3, 'Francisco Javier Escobar De JesÃºs');
 
 -- --------------------------------------------------------
 

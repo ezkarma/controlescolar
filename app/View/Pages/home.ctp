@@ -13,4 +13,4 @@ endif;
 
 App::uses('Debugger', 'Utility');
 ?>
-<h2>Sistema de Gestion de Calificaciones de la Escuela Secundaria Benito Bodoque</h2>
+<h2>Sistema de Revision de Calificaciones de la Secundaria Heriberto Castillo</h2>

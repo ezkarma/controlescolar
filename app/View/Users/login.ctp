@@ -16,9 +16,9 @@
     ))); ?>
 	
     <fieldset>
-        <legend><?php echo __('Por favor introduzca su matricula y contraseña'); ?></legend>
+        <legend><?php echo __('Por favor introduzca su nombre de usuario y contraseña'); ?></legend>
         <?php 
-		echo $this->Form->input('username',array('label'=>'Matricula','class'=>'form-control'));
+		echo $this->Form->input('username',array('label'=>'Nombre de Usuario','class'=>'form-control'));
 	    echo $this->Form->input('password',array('label'=>'Contraseña', 'class'=>'form-control'));
     ?>
     </fieldset>

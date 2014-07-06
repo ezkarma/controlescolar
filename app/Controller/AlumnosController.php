@@ -46,7 +46,7 @@ var $uses = array('Alumno','User','Beca','Carrera');
 		echo $tutor['username'];
 		echo $curp;
 		$this->Alumno->updateAll(array('Alumno.tutor_id' => '"'.$tutor['username'].'"'),array('Alumno.curp' => $curp));
-		$this->redirect(array('controller' => 'alumnos','action'=>'vinculacion/'.$curp));
+		$this->redirect(array('controller' => 'tutores','action'=>'index'));
 	}
 	
 	public function listado() {
@@ -55,8 +55,8 @@ var $uses = array('Alumno','User','Beca','Carrera');
 			$this->set('usuarios', $this->Alumno->find('all'));
 			
 			if ($this->request->is('post')) {
-				$matricula = $this->data['UserBusqueda']['username'];
-				$this->set('usuarios', $this->User->find('all', array('conditions' => array('User.role =' => 'alumno','User.username LIKE' => '%'.$matricula.'%'))));
+				$curp = $this->data['UserBusqueda']['curp'];
+				$this->set('usuarios', $this->Alumno->find('all', array('conditions' => array('Alumno.curp LIKE' => '%'.$curp.'%'))));
 			}
 		}
 		else $this->redirect(array('action' => 'index'));

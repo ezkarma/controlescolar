@@ -80,6 +80,27 @@ var $uses = array('User','Alumno','Tutor','Grupos');
             $this->Tutor->create();
             if ($this->Tutor->save($this->request->data)) {
                 $this->Session->setFlash(__('El tutor ha sido guardado'));
+				
+				$tutor = $this->Tutor->find('first',array('order'=>'id DESC'));				
+				///
+				$ultimo_usuario = $this->User->find('first',array('order'=>'id DESC'));
+				$con_usuarios = $ultimo_usuario['User']['id'];
+		
+				$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+				$randomString = '';
+				for ($i = 0; $i < 6; $i++) {
+					$randomString .= $characters[rand(0, strlen($characters) - 1)];
+				}
+				
+				$this->request->data['User']['id'] = $con_usuarios+ 1;
+				$this->request->data['User']['username'] = $tutor['Tutor']['correo'];
+				$this->request->data['User']['password'] = $randomString;
+				$this->request->data['User']['primer_password'] = $randomString;
+				$this->request->data['User']['rol'] = 'tutor';
+				
+				$this->User->save($this->request->data); 
+				///
+				
                 return $this->redirect(array('controller' =>'tutores','action' => 'listado'));
             }
             $this->Session->setFlash(__('El tutor no pudo ser guardado. Por favor intente nuevamente'));

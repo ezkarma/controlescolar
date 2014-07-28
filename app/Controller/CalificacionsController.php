@@ -24,6 +24,9 @@ var $uses = array('Grupo','Alumno','Tutor','Materia','Calificacion');
 	$calif_4 = $this->Calificacion->find('all',array('conditions'=>array('alumno_id'=>$alumno['Alumno']['id'],'bimestre'=>4)));
 	$this->set('calif_4',$calif_4);
 	
+	$calif_5 = $this->Calificacion->find('all',array('conditions'=>array('alumno_id'=>$alumno['Alumno']['id'],'bimestre'=>5)));
+	$this->set('calif_5',$calif_5);
+	
 	 if ($this->request->is('post')) {
             $this->Calificacion->create();
             if ($this->Calificacion->saveMany($this->request->data['Calificacion'])) {
@@ -78,6 +81,9 @@ var $uses = array('Grupo','Alumno','Tutor','Materia','Calificacion');
 	
 	$calif_4 = $this->Calificacion->find('all',array('conditions'=>array('alumno_id'=>$alumno['Alumno']['id'],'bimestre'=>4)));
 	$this->set('calif_4',$calif_4);
+	
+	$calif_5 = $this->Calificacion->find('all',array('conditions'=>array('alumno_id'=>$alumno['Alumno']['id'],'bimestre'=>5)));
+	$this->set('calif_5',$calif_5);
 	
 	 }
 	

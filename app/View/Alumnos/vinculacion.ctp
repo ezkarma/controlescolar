@@ -19,7 +19,7 @@
 		echo '<td>'.$usuario['Alumno']['nombre'].' '.$usuario['Alumno']['apellidopat'].' '.$usuario['Alumno']['apellidomat'].'</td>';
 		echo '<td>'.$usuario['Alumno']['sexo'].'</td>';
 		echo '<td><center>'.$usuario['Alumno']['grado'].'</center></td>';
-		echo '<td>Grupo</td>';
+		echo '<td><center>'.$usuario['Grupo']['grupo'].'</center></td>';
 		if($usuario['Alumno']['tutor_id'] != null){
 			echo '<td>El Alumno ya tiene un tutor asignado</td>';
 		}

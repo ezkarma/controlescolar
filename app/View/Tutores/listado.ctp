@@ -1,7 +1,7 @@
 <div class="row">
-	<div class="col-lg-2">	
+	<div class="col-lg-1">	
 	</div>
-		<div class="col-lg-8">	        
+		<div class="col-lg-10">	        
 
 <h2>Listado de Tutores</h2>
 <style type="text/css">

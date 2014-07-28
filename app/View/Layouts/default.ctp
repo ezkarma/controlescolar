@@ -50,7 +50,7 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
         height: 60px;
       }
       #footer {
-        background-color: #f5f5f5;
+        background-color: #4e5d6c;
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
@@ -86,10 +86,10 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
 		
-		echo $this->Html->css('bootstrap');
+		//echo $this->Html->css('cake.generic');		
+		echo $this->Html->css('superheroe');
+		
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -98,7 +98,7 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 			
 	?>
 	
-	<style type="text/css">
+	<!---style type="text/css">
 		.navbar-default {
 		background-color: #176228;
 		border-color: #498c40;
@@ -158,7 +158,19 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 				background-color: #498c40;
 			}
 		}
-	</style>
+	</style-->
+	
+	<div class="row">
+	<div class="col-lg-1">	
+	</div>
+	<div class="col-lg-2">	
+	<?php echo $this->Html->image('logo.jpg');?>
+	</div>
+	<div class="col-lg-4"></div>
+	<div class="col-lg-2">
+	<?php echo $this->Html->image('escudo.png');?>
+	</div>
+	</div>
 	
 	<nav class="navbar-default" role="navigation">
 				  <div class="container-fluid">
@@ -184,7 +196,8 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 								if ($this->Session->read('Auth.User')){
 								
 								if($user == 'admin'){
-								echo 	'<li class="tutorials"><a href="/alumnos/listado">Alumnos</a>  </li>
+								echo 	'<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>
+												<li class="tutorials"><a href="/alumnos/listado">Alumnos</a>  </li>
 												<li class="tutorials"><a href="/tutores/listado">Tutores</a>  </li>
 												<li class="tutorials"><a href="/grupos">Grupos</a>  </li>
 												<li class="tutorials"><a href="/materias">Materias</a>  </li>
@@ -195,12 +208,13 @@ $cakeDescription = __d('cake_dev', 'Secundaria Heberto Castillo Martinez');
 											</ul>';
 								}
 									else if($user == 'tutor'){
-									echo 		'	<li class="tutorials"><a href="/alumnos/seleccion">Vincular Alumno</a>  </li>
+									echo 		'	<li class="tutorials"><a href="/users/perfil">Mi perfil</a>  </li>
+														<li class="tutorials"><a href="/alumnos/seleccion">Vincular Alumno</a>  </li>
 														<li class="tutorials"><a href="/mensajes">Mensajes</a>  </li>
-													</ul>
-													<ul class="nav navbar-nav navbar-right">
+														</ul>
+														<ul class="nav navbar-nav navbar-right">
 														<li><a href="/users/logout">Salir</a></li>
-													</ul>';
+														</ul>';
 									}
 								
 								}

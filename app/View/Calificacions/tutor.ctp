@@ -30,7 +30,7 @@
 	$promedio = $sumatoria/$con;
 	echo '<tr>';
 	echo '<td><h3><b>Promedio</b></h3></td>';
-	echo '<td><h3><center>'.$promedio.'</center></h3></td>';
+	echo '<td><h3><center>'.round($promedio,1).'</center></h3></td>';
 	echo '</tr>';
 	echo '</table>';
 	  
@@ -41,15 +41,8 @@
 			echo '</table>';
 	} ?>
 	
-</div>
-<div class="col-lg-2">
-
-</div>
-</div>
 
 <center><h3>Segundo Bimestre</h3></center>
-<div class="col-lg-4"></div>
-<div class="col-lg-4">
 <table>
 <th>Materia</th>
 <th><center>Calificacion</center></th>
@@ -72,7 +65,7 @@
 	$promedio = $sumatoria/$con;
 	echo '<tr>';
 	echo '<td><h3><b>Promedio</b></h3></td>';
-	echo '<td><h3><center>'.$promedio.'</center></h3></td>';
+	echo '<td><h3><center>'.round($promedio,1).'</center></h3></td>';
 	echo '</tr>';
 	echo '</table>';
 	  
@@ -82,16 +75,8 @@
 			echo "<h4><center>Las calificaciones para este bimestre aun<br>no se encuentran registradas</center></h4><br><br>";
 			echo '</table>';
 	} ?>
-	
-</div>
-<div class="col-lg-2">
-
-</div>
-</div>
 
 <center><h3>Tercer Bimestre</h3></center>
-<div class="col-lg-4"></div>
-<div class="col-lg-4">
 <table>
 <th>Materia</th>
 <th><center>Calificacion</center></th>
@@ -114,7 +99,7 @@
 	$promedio = $sumatoria/$con;
 	echo '<tr>';
 	echo '<td><h3><b>Promedio</b></h3></td>';
-	echo '<td><h3><center>'.$promedio.'</center></h3></td>';
+	echo '<td><h3><center>'.round($promedio,1).'</center></h3></td>';
 	echo '</tr>';
 	echo '</table>';
 	  
@@ -125,18 +110,7 @@
 			echo '</table>';
 	} ?>
 	
-</div>
-<div class="col-lg-2">
-
-</div>
-</div>
-
-<br><br><br><br><br>
-<br><br><br><br><br>
-
 <center><h3>Cuarto Bimestre</h3></center>
-<div class="col-lg-4"></div>
-<div class="col-lg-4">
 <table>
 <th>Materia</th>
 <th><center>Calificacion</center></th>
@@ -159,7 +133,7 @@
 	$promedio = $sumatoria/$con;
 	echo '<tr>';
 	echo '<td><h3><b>Promedio</b></h3></td>';
-	echo '<td><h3><center>'.$promedio.'</center></h3></td>';
+	echo '<td><h3><center>'.round($promedio,1).'</center></h3></td>';
 	echo '</tr>';
 	echo '</table>';
 	  
@@ -170,13 +144,38 @@
 			echo '</table>';
 	} ?>
 	
+<center><h3>Quinto Bimestre</h3></center>
+
+<table>
+<th>Materia</th>
+<th><center>Calificacion</center></th>
+<?php echo $this->Form->create('Calificacion');
+  $con = 0;
+  $bimestre = 5;
+  $sumatoria = 0;
+
+  if($calif_5) {  
+  echo '<tr>';
+	  foreach ($calif_5 as $cal){
+			$sumatoria = $sumatoria + $cal['Calificacion']['calificacion'];
+			
+			echo '<td>'.$materias[$con]['Materia']['nombre'].'</td>';
+			echo '<td><center>'.$cal['Calificacion']['calificacion'].'</center></td>';
+						$con++;
+			 echo '</tr>';
+			 
+	  }
+	$promedio = $sumatoria/$con;
+	echo '<tr>';
+	echo '<td><h3><b>Promedio</b></h3></td>';
+	echo '<td><h3><center>'.round($promedio,1).'</center></h3></td>';
+	echo '</tr>';
+	echo '</table>';
+	  
+  }
+
+  else {
+			echo "<h4><center>Las calificaciones para este bimestre aun<br>no se encuentran registradas</center></h4><br><br>";
+			echo '</table>';
+	} ?>
 </div>
-<div class="col-lg-2">
-
-</div>
-</div>
-
-
-
-</div>
-

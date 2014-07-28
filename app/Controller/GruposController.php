@@ -11,12 +11,21 @@ var $uses = array('Grupo','Alumno','Tutor','Materia');
         if ($this->request->is('post')) {
             $this->Grupo->create();
 			$this->request->data['Grupo']['nombre'] = $this->request->data['Grupo']['grado'].$this->request->data['Grupo']['grupo'];
-            if ($this->Grupo->save($this->request->data)) {
-                $this->Session->setFlash(__('El Grupo ha sido guardado'));
-                return $this->redirect(array('controller' =>'grupos','action' => 'index'));
-            }
-            $this->Session->setFlash(__('El grupo no pudo ser guardado. Por favor intente nuevamente'));
-        }
+            $existe_grupo = $this->Grupo->find('first',array('conditions'=>array('nombre'=>$this->request->data['Grupo']['nombre'])));
+			
+			if($existe_grupo != null){
+				$this->Session->setFlash(__('Ya existe un grupo registrado con ese nombre'));
+			}
+			
+			else {
+				if ($this->Grupo->save($this->request->data)) {
+					$this->Session->setFlash(__('El Grupo ha sido guardado'));
+					return $this->redirect(array('controller' =>'grupos','action' => 'index'));
+				}
+				$this->Session->setFlash(__('El grupo no pudo ser guardado. Por favor intente nuevamente'));
+			}
+			
+			}
 		}
 	 else $this->redirect(array('action' => 'logout'));
     }
@@ -57,7 +66,8 @@ var $uses = array('Grupo','Alumno','Tutor','Materia');
 			if ($this->request->is('post') || $this->request->is('put')) {
 			
 			$file = $this->request->data['Document']['submittedfile'];
-
+			
+			echo $this->data['Document']['submittedfile']['tmp_name'];
 			 move_uploaded_file($this->data['Document']['submittedfile']['tmp_name'],     $_SERVER['DOCUMENT_ROOT'] . '/app/webroot/files/horarios/' . $grupo_nombre.'.jpg');
 			
 			//$this->redirect(array('controller' => 'grupos','action' => 'horario/'.$grupo_nombre));

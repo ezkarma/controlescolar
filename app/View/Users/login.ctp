@@ -22,9 +22,9 @@
 	    echo $this->Form->input('password',array('label'=>'Contraseña', 'class'=>'form-control'));
     ?>
     </fieldset>
-
+<br>
 <center><?php echo $this->Form->submit('Iniciar Sesion',array('class' => 'btn btn-success'));?><center>
-
+<br><br>
 
         </div>
     </div>

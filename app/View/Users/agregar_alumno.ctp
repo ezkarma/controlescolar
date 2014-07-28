@@ -9,7 +9,7 @@
 		echo $this->Form->input('nombre');
 		echo $this->Form->input('apellidopat', array('label' => 'Apellido Paterno'));
 		echo $this->Form->input('apellidomat', array('label' => 'Apellido Materno'));
-		echo $this->Form->input('sexo',array('label' => 'Sexo'));
+		echo $this->Form->input('sexo',array('label' => 'Sexo','options'=>array('H'=>'H','M'=>'M'),'default'=>'H'));
         echo $this->Form->input('grupo_id');
         
     ?>

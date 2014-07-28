@@ -61,8 +61,10 @@ var $uses = array('User','Alumno','Tutor','Grupos');
 		$this->set('grupos', $this->Alumno->Grupo->find('list',array('order'=>array('nombre'=>'asc'))));
 		
         if ($this->request->is('post')) {
+		echo 'Entro';
             $this->Alumno->create();
-            if ($this->Alumno->save($this->request->data)) {
+			$this->request->data['Alumno']['nombre_completo'] = $this->request->data['Alumno']['nombre'].' '.$this->request->data['Alumno']['apellidopat'].' '.$this->request->data['Alumno']['apellidomat'];
+			if ($this->Alumno->save($this->request->data)) {
                 $this->Session->setFlash(__('El alumno ha sido guardado'));
                 return $this->redirect(array('controller' =>'alumnos','action' => 'listado'));
             }
@@ -108,6 +110,49 @@ var $uses = array('User','Alumno','Tutor','Grupos');
 		}
 	 else $this->redirect(array('action' => 'logout'));
     }
+	
+	
+	public function perfil() {
+		$user = $this->Auth->user();
+		$this->set('user',$this->Auth->user());
+		
+		if($user['rol'] != 'admin'){
+			$usuario = $this->Tutor->find('first',array('conditions' => array('correo' => $user['username'])));	
+			$this->set('usuario_registrado', $usuario);
+		}
+		
+		else $this->set('usuario_registrado', $user);
+	}
+	
+	public function password() {
+	
+		$this->set('usuario', $this->Auth->user());
+		$usuario = $this->Auth->user();
+					
+		$user=$this->User->find('first',array('conditions' => array('username' => $usuario['username'])));
+        
+		if ($this->request->is('post') || $this->request->is('put')) {
+            $this->request->data;
+			
+			//Checa contraseña actual
+			if ($user['User']['password'] ==AuthComponent::password($this->request->data['User']['password_vieja'])){
+						
+				//Checa si las contraseñas coinciden
+				if ($this->request->data['User']['password_nueva'] == $this->request->data['User']['password']){
+					if ($this->User->save($this->request->data)) {
+						//$this->Alumno->updateAll(array('Alumno.contrasena' => 1), array('Alumno.matricula' => $user['User']['username']));
+						$this->Session->setFlash('La contraseña ha sido modificada');
+						return $this->redirect(array('controller' => 'users', 'action' => 'logout'));
+						
+					}
+					
+				}
+				else $this->Session->setFlash(__('Las contraseñas no coinciden'));
+			}
+			else $this->Session->setFlash(__('Contraseña incorrecta'));
+		}
+				
+	}
 		
 }
 ?>

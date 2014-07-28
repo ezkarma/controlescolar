@@ -15,8 +15,20 @@ var $uses = array('Mensaje','Tutor','Alumno','Grupo');
 	}
 	
 	 public function ver($id) {
+		$usuario = $this->Auth->user();
+		if($usuario['rol'] == 'admin'){
+			$this->set('usuario',$usuario);
+			$mensaje = $this->Mensaje->find('first',array('conditions'=>array('id'=>$id)));
+			$mensajes = $this->Mensaje->find('all',array('order'=>'id DESC','conditions'=>array('remitente'=>$mensaje['Mensaje']['remitente'])));
+			$this->set('mensajes',$mensajes);
+			$this-> set('alumnos', $this->Grupo->Alumno->find('first',array('conditions'=>array('tutor_id'=>$mensaje['Mensaje']['remitente']))));
+			$this->Mensaje->updateAll(array('Mensaje.visto' => true),array('Mensaje.id' => $id));
+		}
+		else {
+		$this->set('usuario',$usuario);
 		$this->set('mensaje', $this->Mensaje->find('first',array('conditions'=>array('id'=>$id))));
 		$this->Mensaje->updateAll(array('Mensaje.visto' => true),array('Mensaje.id' => $id));
+		}
 	}
 	
 	public function nuevo() {
